@@ -1,0 +1,80 @@
+&fpga_axi {
+	axi4stream_mm2s_0:axidma@0 {
+		#dma-cells = <0x1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "xlnx,axi-dma-1.00.a";
+		reg = <0xa0020000 0x10000>;
+		xlnx,include-sg = <0x1>;
+		xlnx,halt-mode = "reset-always";
+		xlnx,addrwidth = <0x20>;
+		clocks = <&core_clkwiz 0>, <&core_clkwiz 0>, <&core_clkwiz 0>;
+		clock-names = "s_axi_lite_aclk", "m_axi_sg_aclk", "m_axi_mm2s_aclk";
+		dma-channel@0  {
+			reg = <0x0>;
+			compatible = "xlnx,axi-dma-mm2s-channel";
+			interrupts = <0x0 0x59 0x4>;
+			dma-channels = <0x1>;
+			xlnx,datawidth = <0x40>;
+			xlnx,device-id = <0x0>;
+		};
+	};
+	axi4stream_mm2s_1:axidma@1 {
+		#dma-cells = <0x1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "xlnx,axi-dma-1.00.a";
+		reg = <0xa0040000 0x10000>;
+		xlnx,include-sg = <0x1>;
+		xlnx,halt-mode = "reset-always";
+		xlnx,addrwidth = <0x20>;
+		clocks = <&core_clkwiz 0>, <&core_clkwiz 0>, <&core_clkwiz 0>;
+		clock-names = "s_axi_lite_aclk", "m_axi_sg_aclk", "m_axi_mm2s_aclk";
+		dma-channel@0  {
+			compatible = "xlnx,axi-dma-mm2s-channel";
+			interrupts = <0x0 0x5b 0x4>;
+			dma-channels = <0x1>;
+			xlnx,datawidth = <0x40>;
+			xlnx,device-id = <0x1>;
+		};
+	};
+	axi4stream_s2mm_0:axidma@3 {
+		#dma-cells = <0x1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "xlnx,axi-dma-1.00.a";
+		reg = <0xa0030000 0x1000>;
+		xlnx,include-sg = <0x1>;
+		xlnx,halt-mode = "reset-always";
+		xlnx,addrwidth = <0x20>;
+		clocks = <&core_clkwiz 0>, <&core_clkwiz 0>, <&core_clkwiz 0>;
+		clock-names = "s_axi_lite_aclk", "m_axi_sg_aclk", "m_axi_s2mm_aclk";
+		dma-channel@0 {
+			compatible = "xlnx,axi-dma-s2mm-channel";
+			interrupts = <0x0 0x5a 0x4>;
+			dma-channels = <0x1>;			
+			xlnx,datawidth = <0x40>;
+			xlnx,device-id = <0x2>;
+		};
+	};
+	axi4stream_s2mm_1:axidma@4 {
+		#dma-cells = <0x1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "xlnx,axi-dma-1.00.a";
+		reg = <0x40050000 0x1000>;
+		xlnx,include-sg = <0x1>;
+		xlnx,halt-mode = "reset-always";
+		xlnx,addrwidth = <0x20>;
+		clocks = <&core_clkwiz 0>, <&core_clkwiz 0>, <&core_clkwiz 0>;
+		clock-names = "s_axi_lite_aclk", "m_axi_sg_aclk", "m_axi_s2mm_aclk";
+		dma-channel@0 {
+			compatible = "xlnx,axi-dma-s2mm-channel";
+			interrupts = <0x0 0x5c 0x4>;
+			dma-channels = <0x1>;			
+			xlnx,datawidth = <0x40>;
+			xlnx,device-id = <0x3>;
+		};
+	};
+};
+

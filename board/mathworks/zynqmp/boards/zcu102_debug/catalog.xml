@@ -1,0 +1,27 @@
+<board name="zcu102_debug" platform="zynqmp">
+    <default>
+        <app name="default">
+        </app>
+		<fsbl file="fsbl.elf"/>
+        <pmufw file="pmufw.elf"/>		
+        <!--				
+		<fsbl dir="handoff"/>
+        <pmufw file="pmufw.bin"/>
+		-->
+    </default>
+    <image name="zynqmpec">
+        <app name="axilite">
+            <dts file="axilite.dts"/>
+            <bit file="axilite.bit"/>
+        </app>
+	<app name="axistream">
+            <dts file="axistream.dts"/>
+        </app>
+	<app name="axistream2dma">
+            <dts file="axistream2dma.dts"/>
+        </app>
+	<app name="axistream8dma">
+            <dts file="axistream8dma.dts"/>
+        </app>
+    </image>
+</board>
