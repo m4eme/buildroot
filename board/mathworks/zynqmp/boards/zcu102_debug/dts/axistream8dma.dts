@@ -1,3 +1,0 @@
-#include "base8dma.dtsi"
-#include "zynqmp-mw-axistream-iio-commonx8.dtsi"
-

@@ -20,8 +20,8 @@
 	<app name="axistream2dma">
             <dts file="axistream2dma.dts"/>
         </app>
-	<app name="axistream8dma">
-            <dts file="axistream8dma.dts"/>
+	<app name="axistream16dma">
+            <dts file="axistream16dma.dts"/>
         </app>
     </image>
 </board>

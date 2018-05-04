@@ -64,7 +64,14 @@ class _SubProcLogger(object):
     def call(self, args, cwd=None, shell=False):
          # Support strings or lists as args
         args = self.getArgs(args)
-        self.proc = subprocess.Popen(args, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=shell)
+        try:
+          self.proc = subprocess.Popen(args, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=shell)
+        except OSError as e:
+          print "Args: ", str(args)
+          print "cwd", str(cwd)
+          print e.filename
+          print e.strerror
+          raise e
         
         # Keep checking until the process exits
         while self.proc.poll() is None:
