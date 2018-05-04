@@ -6,5 +6,5 @@
 	};
 };
 #include "zynqmp-mw-fpga-bridge-common.dtsi"
-#include "zynqmp-mw-commonx8.dtsi"
+#include "zynqmp-mw-commonx16.dtsi"
 

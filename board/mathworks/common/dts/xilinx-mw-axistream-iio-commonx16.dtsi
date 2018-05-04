@@ -1,0 +1,504 @@
+#include "xilinx-mw-axistream-dmax16.dtsi"
+
+&mwipcore0 {
+	compatible = "mathworks,mwipcore-v3.00";
+	#address-cells = <1>;
+	#size-cells = <0>;
+	stream-channel@0 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x0>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_0 0>;
+		mathworks,dev-name = "mm2s0";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@1 {
+		reg = <0x1>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_0 0>;
+		mathworks,dev-name = "s2mm0";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@2 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x2>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_1 0>;
+		mathworks,dev-name = "mm2s1";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@3 {
+		reg = <0x3>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_1 0>;
+		mathworks,dev-name = "s2mm1";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@4 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x4>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_2 0>;
+		mathworks,dev-name = "mm2s2";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@5 {
+		reg = <0x5>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_2 0>;
+		mathworks,dev-name = "s2mm2";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@6 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x6>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_3 0>;
+		mathworks,dev-name = "mm2s3";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@7 {
+		reg = <0x7>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_3 0>;
+		mathworks,dev-name = "s2mm3";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@8 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x8>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_4 0>;
+		mathworks,dev-name = "mm2s4";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@9 {
+		reg = <0x9>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_4 0>;
+		mathworks,dev-name = "s2mm4";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@10 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0xa>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_5 0>;
+		mathworks,dev-name = "mm2s5";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@11 {
+		reg = <0xb>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_5 0>;
+		mathworks,dev-name = "s2mm5";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@12 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0xc>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_6 0>;
+		mathworks,dev-name = "mm2s6";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@13 {
+		reg = <0xd>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_6 0>;
+		mathworks,dev-name = "s2mm6";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@14 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0xe>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_7 0>;
+		mathworks,dev-name = "mm2s7";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@15 {
+		reg = <0xf>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_7 0>;
+		mathworks,dev-name = "s2mm7";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@16 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x10>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_8 0>;
+		mathworks,dev-name = "mm2s8";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@17 {
+		reg = <0x11>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_8 0>;
+		mathworks,dev-name = "s2mm8";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@18 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x12>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_9 0>;
+		mathworks,dev-name = "mm2s9";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@19 {
+		reg = <0x13>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_9 0>;
+		mathworks,dev-name = "s2mm9";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@20 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x14>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_10 0>;
+		mathworks,dev-name = "mm2s10";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@21 {
+		reg = <0x15>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_10 0>;
+		mathworks,dev-name = "s2mm10";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@22 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x16>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_11 0>;
+		mathworks,dev-name = "mm2s11";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@23 {
+		reg = <0x17>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_11 0>;
+		mathworks,dev-name = "s2mm11";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@24 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x18>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_12 0>;
+		mathworks,dev-name = "mm2s12";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@25 {
+		reg = <0x19>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_12 0>;
+		mathworks,dev-name = "s2mm12";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@26 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x1a>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_13 0>;
+		mathworks,dev-name = "mm2s13";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@27 {
+		reg = <0x1b>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_13 0>;
+		mathworks,dev-name = "s2mm13";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@28 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x1c>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_14 0>;
+		mathworks,dev-name = "mm2s14";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@29 {
+		reg = <0x1d>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_14 0>;
+		mathworks,dev-name = "s2mm14";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@30 {			
+		#address-cells = <1>;
+		#size-cells = <0>;
+		reg = <0x1e>;
+		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
+		dma-names = "mm2s";
+		dmas = <&axi4stream_mm2s_15 0>;
+		mathworks,dev-name = "mm2s15";
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+	stream-channel@31 {
+		reg = <0x1f>;
+		#address-cells = <1>;
+		#size-cells = <0>;
+		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
+		dma-names = "s2mm";
+		dmas = <&axi4stream_s2mm_15 0>;
+		mathworks,dev-name = "s2mm15";
+		mathworks,sample-cnt-reg = <0x8>;
+
+		data-channel@0 {
+			compatible = "mathworks,iio-data-channel-v1.00";
+			mathworks,data-format = "u64/64>>0";
+			reg = <0x0>;
+		};
+	};
+};
+

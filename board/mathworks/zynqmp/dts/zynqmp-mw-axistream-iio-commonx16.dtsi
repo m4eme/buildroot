@@ -1,0 +1,226 @@
+#include "zynqmp-mw-cma.dtsi"
+#include "xilinx-mw-axistream-iio-commonx16.dtsi"
+
+&axi4stream_s2mm_0 {
+	reg = <0xA0100000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 90 0x4>;
+	};
+};
+
+&axi4stream_mm2s_0 {
+	reg = <0xA0110000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 89 0x4>;
+	};
+};
+
+&axi4stream_mm2s_1 {
+	reg = <0xA0130000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 92 0x4>;
+	};
+};
+
+&axi4stream_s2mm_1 {
+	reg = <0xA0120000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 91 0x4>;
+	};
+};
+
+&axi4stream_mm2s_2 {
+	reg = <0xA0150000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 94 0x4>;
+	};
+};
+
+&axi4stream_s2mm_2 {
+	reg = <0xA0140000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 93 0x4>;
+	};
+};
+
+&axi4stream_s2mm_3 {
+	reg = <0xA0160000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 95 0x4>;
+	};
+};
+
+&axi4stream_mm2s_3 {
+	reg = <0xA0170000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 96 0x4>;
+	};
+};
+
+&axi4stream_s2mm_4 {
+	reg = <0xA0180000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 104 0x4>;
+	};
+};
+
+&axi4stream_mm2s_4 {
+	reg = <0xA0190000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 105 0x4>;
+	};
+};
+
+&axi4stream_s2mm_5 {
+	reg = <0xA01A0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 106 0x4>;
+	};
+};
+
+&axi4stream_mm2s_5 {
+	reg = <0xA01B0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 107 0x4>;
+	};
+};
+
+&axi4stream_s2mm_6 {
+	reg = <0xA01C0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 108 0x4>;
+	};
+};
+
+&axi4stream_mm2s_6 {
+	reg = <0xA01D0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 109 0x4>;
+	};
+};
+
+&axi4stream_s2mm_7 {
+	reg = <0xA01E0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 110 0x4>;
+	};
+};
+
+&axi4stream_mm2s_7 {
+	reg = <0xA01F0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 111 0x4>;
+	};
+};
+
+&axi4stream_s2mm_8 {
+	reg = <0xA0200000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 112 0x4>;
+	};
+};
+
+&axi4stream_mm2s_8 {
+	reg = <0xA0210000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 113 0x4>;
+	};
+};
+
+&axi4stream_s2mm_9 {
+	reg = <0xA0220000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 114 0x4>;
+	};
+};
+
+&axi4stream_mm2s_9 {
+	reg = <0xA0230000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 115 0x4>;
+	};
+};
+
+&axi4stream_s2mm_10 {
+	reg = <0xA0240000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 116 0x4>;
+	};
+};
+
+&axi4stream_mm2s_10 {
+	reg = <0xA0250000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 117 0x4>;
+	};
+};
+
+&axi4stream_s2mm_11 {
+	reg = <0xA0260000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 118 0x4>;
+	};
+};
+
+&axi4stream_mm2s_11 {
+	reg = <0xA0270000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 119 0x4>;
+	};
+};
+
+&axi4stream_s2mm_12 {
+	reg = <0xA0280000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 120 0x4>;
+	};
+};
+
+&axi4stream_mm2s_12 {
+	reg = <0xA0290000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 121 0x4>;
+	};
+};
+
+&axi4stream_s2mm_13 {
+	reg = <0xA02A0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 122 0x4>;
+	};
+};
+
+&axi4stream_mm2s_13 {
+	reg = <0xA02B0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 123 0x4>;
+	};
+};
+
+&axi4stream_s2mm_14 {
+	reg = <0xA02C0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 124 0x4>;
+	};
+};
+
+&axi4stream_mm2s_14 {
+	reg = <0xA02D0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 125 0x4>;
+	};
+};
+
+&axi4stream_s2mm_15 {
+	reg = <0xA02E0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 126 0x4>;
+	};
+};
+
+&axi4stream_mm2s_15 {
+	reg = <0xA02F0000 0x10000>;
+	dma-channel@0  {
+		interrupts = <0x0 127 0x4>;
+	};
+};
