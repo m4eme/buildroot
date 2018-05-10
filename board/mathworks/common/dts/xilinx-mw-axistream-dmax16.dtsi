@@ -4,9 +4,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0100000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <1 2>;
+		reg = <0xa0100000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -16,6 +14,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <1 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x0>;
 		};
@@ -26,8 +26,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0110000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <0 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -38,6 +36,8 @@
 			dma-channels = <0x1>;			
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <0 2>;
 		};
 	};
 	axi4stream_mm2s_1:axidma@2 {
@@ -45,9 +45,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0120000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <3 2>;
+		reg = <0xa0120000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -57,6 +55,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <3 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x2>;
 		};
@@ -67,8 +67,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0130000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <2 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -77,6 +75,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <2 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x3>;
 		};
@@ -86,9 +86,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0140000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <5 2>;
+		reg = <0xa0140000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -98,6 +96,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <5 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x4>;
 		};
@@ -108,8 +108,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0150000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <4 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -118,6 +116,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <4 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x5>;
 		};
@@ -127,9 +127,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0160000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <7 2>;
+		reg = <0xa0160000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -139,6 +137,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <7 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x6>;
 		};
@@ -149,8 +149,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0170000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_0>;
-                interrupts = <6 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -159,6 +157,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_0>;
+                        interrupts = <6 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x7>;
 		};
@@ -168,9 +168,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0180000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <1 2>;
+		reg = <0xa0180000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -180,6 +178,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <1 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x8>;
 		};
@@ -190,8 +190,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0190000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <0 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -200,6 +198,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <0 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0x9>;
 		};
@@ -209,9 +209,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa01a0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <3 2>;
+		reg = <0xa01a0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -221,6 +219,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <3 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xa>;
 		};
@@ -231,8 +231,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa01b0000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <2 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -241,6 +239,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <2 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xb>;
 		};
@@ -250,9 +250,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa01c0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <5 2>;
+		reg = <0xa01c0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -262,6 +260,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <5 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xc>;
 		};
@@ -272,8 +272,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa01d0000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <4 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -282,6 +280,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <4 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xd>;
 		};
@@ -291,9 +291,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa01e0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <7 2>;
+		reg = <0xa01e0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -303,6 +301,8 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <7 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xe>;
 		};
@@ -313,8 +313,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa01f0000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_1>;
-                interrupts = <6 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -323,6 +321,8 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_1>;
+                        interrupts = <6 2>;
 			xlnx,datawidth = <0x40>;
 			xlnx,device-id = <0xf>;
 		};
@@ -332,9 +332,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0200000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <1 2>;
+		reg = <0xa0200000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -344,8 +342,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <1 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x10>;
 		};
 	};
 	axi4stream_s2mm_8:axidma@17 {
@@ -354,8 +354,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0210000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <0 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -364,8 +362,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <0 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x11>;
 		};
 	};
 	axi4stream_mm2s_9:axidma@18 {
@@ -373,9 +373,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0220000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <3 2>;
+		reg = <0xa0220000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -385,8 +383,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <3 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x12>;
 		};
 	};
 	axi4stream_s2mm_9:axidma@19 {
@@ -395,8 +395,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0230000 0x1000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <2 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -405,8 +403,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <2 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x13>;
 		};
 	};
 	axi4stream_mm2s_10:axidma@20 {
@@ -414,9 +414,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0240000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <5 2>;
+		reg = <0xa0240000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -426,8 +424,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <5 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x14>;
 		};
 	};
 	axi4stream_s2mm_10:axidma@21 {
@@ -436,8 +436,6 @@
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
 		reg = <0xa0250000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <4 2>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -446,8 +444,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <4 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x15>;
 		};
 	};
 	axi4stream_mm2s_11:axidma@22 {
@@ -455,9 +455,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0260000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <7 2>;
+		reg = <0xa0260000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -467,8 +465,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <7 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x16>;
 		};
 	};
 	axi4stream_s2mm_11:axidma@23 {
@@ -476,9 +476,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0270000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_2>;
-                interrupts = <6 2>;
+		reg = <0xa0270000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -487,8 +485,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_2>;
+                        interrupts = <6 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x17>;
 		};
 	};
 	axi4stream_mm2s_12:axidma@24 {
@@ -496,9 +496,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0280000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <1 2>;
+		reg = <0xa0280000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -508,8 +506,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <1 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x18>;
 		};
 	};
 	axi4stream_s2mm_12:axidma@25 {
@@ -517,9 +517,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa0290000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <0 2>;
+		reg = <0xa0290000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -528,8 +526,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <0 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x19>;
 		};
 	};
 	axi4stream_mm2s_13:axidma@26 {
@@ -537,9 +537,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02a0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <3 2>;
+		reg = <0xa02a0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -549,8 +547,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <3 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x1a>;
 		};
 	};
 	axi4stream_s2mm_13:axidma@27 {
@@ -558,9 +558,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02b0000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <2 2>;
+		reg = <0xa02b0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -569,8 +567,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <2 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x1b>;
 		};
 	};
 	axi4stream_mm2s_14:axidma@28 {
@@ -578,9 +578,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02c0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <5 2>;
+		reg = <0xa02c0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -590,8 +588,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <5 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x1c>;
 		};
 	};
 	axi4stream_s2mm_14:axidma@29 {
@@ -599,9 +599,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02d0000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <4 2>;
+		reg = <0xa02d0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -610,8 +608,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <4 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x1d>;
 		};
 	};
 	axi4stream_mm2s_15:axidma@30 {
@@ -619,9 +619,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02e0000 0x10000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <7 2>;
+		reg = <0xa02e0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -631,8 +629,10 @@
 			reg = <0x0>;
 			compatible = "xlnx,axi-dma-mm2s-channel";
 			dma-channels = <0x1>;
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <7 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xe>;
+			xlnx,device-id = <0x1e>;
 		};
 	};
 	axi4stream_s2mm_15:axidma@31 {
@@ -640,9 +640,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "xlnx,axi-dma-1.00.a";
-		reg = <0xa02d0000 0x21000>;
-                interrupt-parent = <&DMA_subsystem_axi_intc_3>;
-                interrupts = <6 2>;
+		reg = <0xa02f0000 0x1000>;
 		xlnx,include-sg = <0x1>;
 		xlnx,halt-mode = "reset-always";
 		xlnx,addrwidth = <0x20>;
@@ -651,8 +649,10 @@
 		dma-channel@0 {
 			compatible = "xlnx,axi-dma-s2mm-channel";
 			dma-channels = <0x1>;			
+                        interrupt-parent = <&DMA_subsystem_axi_intc_3>;
+                        interrupts = <6 2>;
 			xlnx,datawidth = <0x40>;
-			xlnx,device-id = <0xf>;
+			xlnx,device-id = <0x1f>;
 		};
 	};
 };

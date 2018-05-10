@@ -1,0 +1,13 @@
+#include "base.dtsi"
+#include "zynqmp-mw-axistream-iio-common.dtsi"
+
+&axi4stream_mm2s {
+	dma-channel@0  {
+          xlnx,datawidth = <0x40>;
+	};
+};
+&axi4stream_s2mm {
+	dma-channel@0  {
+          xlnx,datawidth = <0x40>;
+	};
+};

@@ -9,7 +9,7 @@
 		#size-cells = <0>;
 		reg = <0x0>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_0";
 		dmas = <&axi4stream_mm2s_0 0>;
 		mathworks,dev-name = "mm2s0";
 
@@ -24,7 +24,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_0";
 		dmas = <&axi4stream_s2mm_0 0>;
 		mathworks,dev-name = "s2mm0";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -40,7 +40,7 @@
 		#size-cells = <0>;
 		reg = <0x2>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_1";
 		dmas = <&axi4stream_mm2s_1 0>;
 		mathworks,dev-name = "mm2s1";
 
@@ -55,7 +55,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_1";
 		dmas = <&axi4stream_s2mm_1 0>;
 		mathworks,dev-name = "s2mm1";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -71,7 +71,7 @@
 		#size-cells = <0>;
 		reg = <0x4>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_2";
 		dmas = <&axi4stream_mm2s_2 0>;
 		mathworks,dev-name = "mm2s2";
 
@@ -86,7 +86,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_2";
 		dmas = <&axi4stream_s2mm_2 0>;
 		mathworks,dev-name = "s2mm2";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -102,7 +102,7 @@
 		#size-cells = <0>;
 		reg = <0x6>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_3";
 		dmas = <&axi4stream_mm2s_3 0>;
 		mathworks,dev-name = "mm2s3";
 
@@ -117,7 +117,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_3";
 		dmas = <&axi4stream_s2mm_3 0>;
 		mathworks,dev-name = "s2mm3";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -133,7 +133,7 @@
 		#size-cells = <0>;
 		reg = <0x8>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_4";
 		dmas = <&axi4stream_mm2s_4 0>;
 		mathworks,dev-name = "mm2s4";
 
@@ -148,7 +148,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_4";
 		dmas = <&axi4stream_s2mm_4 0>;
 		mathworks,dev-name = "s2mm4";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -164,7 +164,7 @@
 		#size-cells = <0>;
 		reg = <0xa>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_5";
 		dmas = <&axi4stream_mm2s_5 0>;
 		mathworks,dev-name = "mm2s5";
 
@@ -179,7 +179,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_5";
 		dmas = <&axi4stream_s2mm_5 0>;
 		mathworks,dev-name = "s2mm5";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -195,7 +195,7 @@
 		#size-cells = <0>;
 		reg = <0xc>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_6";
 		dmas = <&axi4stream_mm2s_6 0>;
 		mathworks,dev-name = "mm2s6";
 
@@ -210,7 +210,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_6";
 		dmas = <&axi4stream_s2mm_6 0>;
 		mathworks,dev-name = "s2mm6";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -226,7 +226,7 @@
 		#size-cells = <0>;
 		reg = <0xe>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_7";
 		dmas = <&axi4stream_mm2s_7 0>;
 		mathworks,dev-name = "mm2s7";
 
@@ -241,7 +241,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_7";
 		dmas = <&axi4stream_s2mm_7 0>;
 		mathworks,dev-name = "s2mm7";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -257,7 +257,7 @@
 		#size-cells = <0>;
 		reg = <0x10>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_8";
 		dmas = <&axi4stream_mm2s_8 0>;
 		mathworks,dev-name = "mm2s8";
 
@@ -272,7 +272,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_8";
 		dmas = <&axi4stream_s2mm_8 0>;
 		mathworks,dev-name = "s2mm8";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -288,7 +288,7 @@
 		#size-cells = <0>;
 		reg = <0x12>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_9";
 		dmas = <&axi4stream_mm2s_9 0>;
 		mathworks,dev-name = "mm2s9";
 
@@ -303,7 +303,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_9";
 		dmas = <&axi4stream_s2mm_9 0>;
 		mathworks,dev-name = "s2mm9";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -319,7 +319,7 @@
 		#size-cells = <0>;
 		reg = <0x14>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_10";
 		dmas = <&axi4stream_mm2s_10 0>;
 		mathworks,dev-name = "mm2s10";
 
@@ -334,7 +334,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_10";
 		dmas = <&axi4stream_s2mm_10 0>;
 		mathworks,dev-name = "s2mm10";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -350,7 +350,7 @@
 		#size-cells = <0>;
 		reg = <0x16>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_11";
 		dmas = <&axi4stream_mm2s_11 0>;
 		mathworks,dev-name = "mm2s11";
 
@@ -365,7 +365,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_11";
 		dmas = <&axi4stream_s2mm_11 0>;
 		mathworks,dev-name = "s2mm11";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -381,7 +381,7 @@
 		#size-cells = <0>;
 		reg = <0x18>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_12";
 		dmas = <&axi4stream_mm2s_12 0>;
 		mathworks,dev-name = "mm2s12";
 
@@ -396,7 +396,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_12";
 		dmas = <&axi4stream_s2mm_12 0>;
 		mathworks,dev-name = "s2mm12";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -412,7 +412,7 @@
 		#size-cells = <0>;
 		reg = <0x1a>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_13";
 		dmas = <&axi4stream_mm2s_13 0>;
 		mathworks,dev-name = "mm2s13";
 
@@ -427,7 +427,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_13";
 		dmas = <&axi4stream_s2mm_13 0>;
 		mathworks,dev-name = "s2mm13";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -443,7 +443,7 @@
 		#size-cells = <0>;
 		reg = <0x1c>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_14";
 		dmas = <&axi4stream_mm2s_14 0>;
 		mathworks,dev-name = "mm2s14";
 
@@ -458,7 +458,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_14";
 		dmas = <&axi4stream_s2mm_14 0>;
 		mathworks,dev-name = "s2mm14";
 		mathworks,sample-cnt-reg = <0x8>;
@@ -474,7 +474,7 @@
 		#size-cells = <0>;
 		reg = <0x1e>;
 		compatible = "mathworks,axi4stream-mm2s-channel-v1.00";
-		dma-names = "mm2s";
+		dma-names = "mm2s_15";
 		dmas = <&axi4stream_mm2s_15 0>;
 		mathworks,dev-name = "mm2s15";
 
@@ -489,7 +489,7 @@
 		#address-cells = <1>;
 		#size-cells = <0>;
 		compatible = "mathworks,axi4stream-s2mm-channel-v1.00";
-		dma-names = "s2mm";
+		dma-names = "s2mm_15";
 		dmas = <&axi4stream_s2mm_15 0>;
 		mathworks,dev-name = "s2mm15";
 		mathworks,sample-cnt-reg = <0x8>;
