@@ -1,5 +1,5 @@
 /{
-	fpd_hpm0_32: fpd-hpm0-32 {
+	fpga_axi: fpga_axi {
 		compatible = "simple-bus";
 		interrupt-parent = <&gic>;
 		#address-cells = <1>;
@@ -9,4 +9,4 @@
 	};
 };
 
-#define fpga_axi fpd_hpm0_32
+/*#define fpga_axi fpd_hpm0_32*/

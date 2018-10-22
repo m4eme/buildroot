@@ -10,8 +10,9 @@
 	DMA_subsystem_axi_intc_0: interrupt-controller@a0300000 {
 		#interrupt-cells = <2>;
 		compatible = "xlnx,xps-intc-1.00.a";
-		interrupt-controller ;
-		reg = <0x0 0xa0300000 0x0 0x1000>;
+		interrupt-controller;
+                interrupt-parent = <&gic>;
+		reg = <0xa0300000 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -19,8 +20,9 @@
 	DMA_subsystem_axi_intc_1: interrupt-controller@a0310000 {
 		#interrupt-cells = <2>;
 		compatible = "xlnx,xps-intc-1.00.a";
-		interrupt-controller ;
-		reg = <0x0 0xa0310000 0x0 0x1000>;
+		interrupt-controller;
+                interrupt-parent = <&gic>;
+		reg = <0xa0310000 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -28,8 +30,9 @@
 	DMA_subsystem_axi_intc_2: interrupt-controller@a0320000 {
 		#interrupt-cells = <2>;
 		compatible = "xlnx,xps-intc-1.00.a";
-		interrupt-controller ;
-		reg = <0x0 0xa0320000 0x0 0x1000>;
+		interrupt-controller;
+                interrupt-parent = <&gic>;
+		reg = <0xa0320000 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -37,8 +40,9 @@
 	DMA_subsystem_axi_intc_3: interrupt-controller@a0330000 {
 		#interrupt-cells = <2>;
 		compatible = "xlnx,xps-intc-1.00.a";
-		interrupt-controller ;
-		reg = <0x0 0xa0330000 0x0 0x1000>;
+		interrupt-controller;
+                interrupt-parent = <&gic>;
+		reg = <0xa0330000 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};

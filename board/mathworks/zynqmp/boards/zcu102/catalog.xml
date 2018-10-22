@@ -14,8 +14,11 @@
             <dts file="axilite.dts"/>
             <bit file="axilite.bit"/>
         </app>
-		<app name="axistream">
+        <app name="axistream">
             <dts file="axistream.dts"/>
+        </app>
+        <app name="axistream_64bit">
+            <dts file="axistream_64bit.dts"/>
         </app>
     </image>
 </board>
