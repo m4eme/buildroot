@@ -20,5 +20,8 @@
         <app name="axistream_64bit">
             <dts file="axistream_64bit.dts"/>
         </app>
+	<app name="axistream16dma">
+            <dts file="axistream16dma.dts"/>
+        </app>
     </image>
 </board>

@@ -12,7 +12,7 @@
 		compatible = "xlnx,xps-intc-1.00.a";
 		interrupt-controller;
                 interrupt-parent = <&gic>;
-		reg = <0xa0300000 0x1000>;
+		reg = <0x0 0xa0300000 0x0 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -22,7 +22,7 @@
 		compatible = "xlnx,xps-intc-1.00.a";
 		interrupt-controller;
                 interrupt-parent = <&gic>;
-		reg = <0xa0310000 0x1000>;
+		reg = <0x0 0xa0310000 0x0 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -32,7 +32,7 @@
 		compatible = "xlnx,xps-intc-1.00.a";
 		interrupt-controller;
                 interrupt-parent = <&gic>;
-		reg = <0xa0320000 0x1000>;
+		reg = <0x0 0xa0320000 0x0 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
@@ -42,7 +42,7 @@
 		compatible = "xlnx,xps-intc-1.00.a";
 		interrupt-controller;
                 interrupt-parent = <&gic>;
-		reg = <0xa0330000 0x1000>;
+		reg = <0x0 0xa0330000 0x0 0x1000>;
 		xlnx,kind-of-intr = <0x0>;
 		xlnx,num-intr-inputs = <0x8>;
 	};
