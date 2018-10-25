@@ -1,3 +1,0 @@
-#include "base2xIP.dtsi"
-#include "zynqmp-mw-axistream-iio-commonx2.dtsi"
-
