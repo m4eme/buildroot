@@ -27,7 +27,7 @@
 		dma-names = "s2mm_0";
 		dmas = <&axi4stream_s2mm_0 0>;
 		mathworks,dev-name = "s2mm0";
-		mathworks,sample-cnt-reg = <0x44>;
+		mathworks,sample-cnt-reg = <0x8>;
 
 		data-channel@0 {
 			compatible = "mathworks,iio-data-channel-v1.00";
@@ -462,7 +462,7 @@
 		dma-names = "s2mm_14";
 		dmas = <&axi4stream_s2mm_14 0>;
 		mathworks,dev-name = "s2mm14";
-		mathworks,sample-cnt-reg = <0x3C>;
+		mathworks,sample-cnt-reg = <0x40>;
 
 		data-channel@0 {
 			compatible = "mathworks,iio-data-channel-v1.00";
@@ -493,7 +493,7 @@
 		dma-names = "s2mm_15";
 		dmas = <&axi4stream_s2mm_15 0>;
 		mathworks,dev-name = "s2mm15";
-		mathworks,sample-cnt-reg = <0x40>;
+		mathworks,sample-cnt-reg = <0x44>;
 
 		data-channel@0 {
 			compatible = "mathworks,iio-data-channel-v1.00";
